@@ -1,0 +1,31 @@
+.outer-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 2px;
+}
+.noclick {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  transition: background-color 0.3s;
+}
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: gray;
+}
